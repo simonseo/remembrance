@@ -8,7 +8,7 @@
     "start": "node app.js"
   },
   "keywords": [],
-  "author": "zillwc",
+  "author": "zillwc, reicruz",
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.1",

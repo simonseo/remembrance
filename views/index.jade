@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .container
+    div(id="video-container")
+      video(id="video", width="500", height="350", autoplay)
+      canvas(id="canvas", width="500" height="350")
+
+    .form-group
+      label(for="personName") Name
+      input(type="text", class="form-control", id="personName", disabled="true")
+    .form-group
+      label(for="personDetails") Details
+      textarea(rows="5", class="form-control", id="personDetails", disabled="true")
+
+  button(id="trainNewPerson", class="btn btn-primary push-to-bottom") Train New Person
+
+  script(src="/javascripts/main.js")

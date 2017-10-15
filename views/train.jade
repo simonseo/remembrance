@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  div(id="video-container")
+    video(id="video", width="500", height="350", autoplay)
+    canvas(id="canvas", width="500" height="350")
+
+  p(align="center", id="status" class="text-success") 0/7 images trained
+
+  div(id="capturedBox", align="center")
+    img(id="captured", width="100", height="100")
+
+  div.modal(id="infoModal", data-toggle="modal", data-backdrop="static", keyboard: false)
+    .modal-header
+      h3 Train New Person
+    .modal-body
+      small Enter some details to remember this person by
+      br
+      .form-group
+        input(type="text", class="form-control", id="personName", placeholder="Person's Name")
+      .form-group
+        textarea(rows="5", class="form-control", id="personDetails", placeholder="Things you may want to remember about them")
+    .modal-footer
+      button(id="backBtn", class="btn btn-default") Back
+      button(id="trainBtn", class="btn btn-primary") Start Training
+
+  button(id="btnBack", class="btn btn-primary push-to-bottom") Back to Search
+
+  script(src="/javascripts/train.js")

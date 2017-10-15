@@ -1,0 +1,69 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
+  min-height: 350px;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.innerBorder {
+  -webkit-box-shadow: inset 0px 0px 0px 4px #bdc3c7;
+  -moz-box-shadow: inset 0px 0px 0px 4px #bdc3c7;
+  box-shadow: inset 0px 0px 0px 4px #bdc3c7;
+  box-shadow: inset 0px 0px 0px 4px #bdc3c7;
+  border-top: none;
+}
+
+#video-container {
+  height: 350px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+video, canvas {
+  position: absolute;
+}
+
+#trainNewPerson, #btnBack {
+  width: 100%;
+  height: 50px;
+  border-radius: 0px;
+  font-size: 30px;
+}
+
+.push-to-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#infoModal {
+  color: #000000;
+  background: #ffffff;
+}
+
+.form-group {
+  margin-top: 15px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+#status {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+textarea {
+  width: 100%;
+}
+
+#capturedBox {
+  margin: 17px;
+}
